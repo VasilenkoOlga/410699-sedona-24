@@ -42,44 +42,68 @@
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <fieldset class="review__form-collection">
             <legend class="review__form-name">Представьтесь:</legend>
-            <label for="first-name">Имя*</label>
-            <input type="text" class="review__field-input" id="first-name" name="first-name" placeholder="Петр" required>
-            <label for="surname">Фамилия*</label>
-            <input type="text" class="review__field-input" id="surname" name="surname" placeholder="Иванов" required>
-            <label for="patronymic">Отчество*</label>
-            <input type="text" class="review__field-input" id="patronymic" name="patronymic" placeholder="Александрович">
+            <div class="review__field review__first-name">
+              <label for="first-name">Имя*</label>
+              <input type="text" class="review__field__input" id="first-name" name="first-name" placeholder="Петр" required>
+            </div>
+            <div class="review__field review__surname">
+              <label for="surname">Фамилия*</label>
+              <input type="text" class="review__field__input" id="surname" name="surname" placeholder="Иванов" required>
+            </div>
+            <div class="review__field review__patronymic">
+              <label for="patronymic">Отчество*</label>
+              <input type="text" class="review__field__input" id="patronymic" name="patronymic" placeholder="Александрович">
+            </div>
           </fieldset>
           <fieldset class="review__form-collection">
             <legend class="review__form-name">Контактная информация:</legend>
-            <label for="telephone">Контактный телефон*</label>
-            <input type="tel" class="review__field-input" id="telephone" placeholder="Введите телефон" name="telephone" required>
-            <label for="email">Электронная почта*</label>
-            <input type="email" class="review__field-input" id="email" placeholder="Введите e-mail" name="email" required>
+            <div class="review__field review__telephonee">
+              <label for="telephone">Контактный телефон*</label>
+              <input type="tel" class="review__field__input" id="telephone" placeholder="Введите телефон" name="telephone" required>
+            </div>
+            <div class="review__field review__email">
+              <label for="email">Электронная почта*</label>
+              <input type="email" class="review__field__input" id="email" placeholder="Введите e-mail" name="email" required>
+            </div>
           </fieldset>
           <fieldset class="review__form-collection">
             <legend class="review__form-name">Ваше общее впечатление:</legend>
-            <label for="positive">Скорее положительное</label>
-            <input type="radio" class="review__field-input review__field-input--radio" id="positive" name="radio" value="positive">
-            <label for="negative">Скорее отрицательное</label>
-            <input type="radio" class="review__field-input review__field-input--radio" id="negative" name="radio" value="negative">
-            <label for="neutral">Затрудняюсь ответить</label>
-            <input type="radio" class="review__field-input review__field-input--radio" id="neutral" name="radio" value="neutral">
+            <div class="review__field review__radio-positive">
+              <label for="positive">Скорее положительное</label>
+              <input type="radio" class="review__field__input review__field__input--radio" id="positive" name="radio" value="positive">
+            </div>
+            <div class="review__field review__radio-negative">
+              <label for="negative">Скорее отрицательное</label>
+              <input type="radio" class="review__field__input review__field__input--radio" id="negative" name="radio" value="negative">
+            </div>
+            <div class="review__field review__radio-neutral">
+              <label for="neutral">Затрудняюсь ответить</label>
+              <input type="radio" class="review__field__input review__field__input--radio" id="neutral" name="radio" value="neutral">
+            </div>
           </fieldset>
           <fieldset class="review__form-collection">
             <legend class="review__form-name">Посещённые достопримечательности:</legend>
-            <label for="bridge">Мост дьявола</label>
-            <input type="checkbox" class="review__field-input review__field-input--checkbox" id="bridge" name="bridge" value="bridge" checked>
-            <label for="mountain">Гора-Колокол</label>
-            <input type="checkbox" class="review__field-input review__field-input--checkbox" id="mountain" name="mountain" value="mountain" checked>
-            <label for="park">Слайд-парк</label>
-            <input type="checkbox" class="review__field-input review__field-input--checkbox" id="park" name="park" value="park" checked>
-            <label for="rock">Красные скалы</label>
-            <input type="checkbox" class="review__field-input review__field-input--checkbox" id="rock" name="rock" value="rock">
+            <div class=" review__field review__bridge">
+              <label for="bridge">Мост дьявола</label>
+              <input type="checkbox" class="review__field__input review__field__input--checkbox" id="bridge" name="bridge" value="bridge" checked>
+            </div>
+            <div class="review__field review__mountain">
+              <label for="mountain">Гора-Колокол</label>
+              <input type="checkbox" class="review__field__input review__field__input--checkbox" id="mountain" name="mountain" value="mountain" checked>
+            </div>
+            <div class="review__field review__park">
+              <label for="park">Слайд-парк</label>
+              <input type="checkbox" class="review__field__input review__field__input--checkbox" id="park" name="park" value="park" checked>
+            </div>
+            <div class=" review__field review__rock">
+              <label for="rock">Красные скалы</label>
+              <input type="checkbox" class="review__field__input review__field__input--checkbox" id="rock" name="rock" value="rock">
+            </div>
           </fieldset>
           <fieldset class="review__form-collection">
             <legend class="review__form-name">Опишите свои эмоции:</legend>
             <label for="text"></label>
-            <input type="text" class="review__field-input review__field-input--text" id="text" name="text" placeholder="Опишите подробно все свои восторги">
+            <input type="text" class="review__field__input review__field__input--text" id="text" name="text" placeholder="Опишите подробно все свои восторги">
           </fieldset>
           <button class="button" type="submit">Отправить отзыв</button>
         </form>
