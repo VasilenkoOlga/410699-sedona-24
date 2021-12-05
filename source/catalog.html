@@ -2,11 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="./css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <img src="img/sedona-logo.svg" width="102" height="84" alt="Логотип «Sedona»" class="logo-image">
       </a>
       <nav class="main-nav">
@@ -15,13 +16,13 @@
         </button>
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a href="" class="main-nav__link">Главная</a>
+            <a href="index.html" class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
             <a href="#" class="main-nav__link main-nav__link--active">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Форма отзыва</a>
+            <a href="form.html" class="main-nav__link">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
             <a href="htmlacademy.ru" class="main-nav__link">Html Academy</a>
@@ -44,7 +45,9 @@
             <h2 class="gallery__attraction-title">Неродные просторы</h2>
             <p class="gallery__attraction-information">Автор фото: Борис</p>
             <div class="gallery__likes">
-              <button class="likes-button" type="button">Лайк</button>
+              <button class="likes-button" type="button">
+                <img src="img/like.svg" alt="Лайк" width="23" height="21">
+              </button>
               <p class="likes-counter">1350</p>
             </div>
           </div>
@@ -55,7 +58,9 @@
             <h2 class="gallery__attraction-title">Местная растительность</h2>
             <p class="gallery__attraction-information">Автор фото: Сергейс</p>
             <div class="gallery__likes">
-              <button class="likes-button" type="button">Лайк</button>
+              <button class="likes-button" type="button">
+                <img src="img/like.svg" alt="Лайк" width="23" height="21">
+              </button>
               <p class="likes-counter">143</p>
             </div>
           </div>
@@ -66,7 +71,9 @@
             <h2 class="gallery__attraction-title">Дорога на север</h2>
             <p class="gallery__attraction-information">Автор фото: Петр</p>
             <div class="gallery__likes">
-              <button class="likes-button" type="button">Лайк</button>
+              <button class="likes-button" type="button">
+                <img src="img/like.svg" alt="Лайк" width="23" height="21">
+              </button>
               <p class="likes-counter">96</p>
             </div>
           </div>
@@ -77,7 +84,9 @@
             <h2 class="gallery__attraction-title">Мост дьявола</h2>
             <p class="gallery__attraction-information">Автор фото: Антон</p>
             <div class="gallery__likes">
-              <button class="likes-button" type="button">Лайк</button>
+              <button class="likes-button" type="button">
+                <img src="img/like.svg" alt="Лайк" width="23" height="21">
+              </button>
               <p class="likes-counter">254</p>
             </div>
           </div>
@@ -86,7 +95,7 @@
       <section class="video">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video src="#" poster="img/video.jpg" height="201" width="320" controls></video>
+        <video class="video_show" src="#" poster="img/video.jpg" height="201" width="320" controls></video>
       </section>
     </main>
     <footer class="page-footer">
