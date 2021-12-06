@@ -1,13 +1,118 @@
+.review {
+  padding-top: 20px;
+}
+
 .review__form-collection {
   border: none;
-  padding-top: 20px;
+  padding-top: 19px;
   padding-bottom: 25px;
-  border-top: 1px solid #e5e5e5;
+}
+
+.review__form-collection--name .review__field {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .review__form-name {
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 17px;
+  padding-top: 20px;
+}
+
+.review__field__input {
+  background-color: #f2f2f2;
+  color: @black;
+  padding-bottom: 14px;
+  padding-top: 18px;
+  padding-left: 22px;
+  border: none;
+}
+
+.review__field-label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.review__form-collection--name .review__field__input {
+  margin-left: 13px;
+}
+
+.review__field__input::placeholder {
+  font-size: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 26px;
+  color: @black;
+}
+
+.review__form-collection--contact .review__field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.review__form-collection--contact .review__field-label {
+  padding-left: 22px;
+  margin-bottom: 8px;
+}
+
+.review__form-collection--impressions .review__field {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-left: 78px;
+  margin-top: 21px;
+  margin-bottom: 22px;
+}
+
+.review__form-collection--impressions .review__field-label {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.review__form-collection--places .review__field {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-left: 78px;
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+
+.review__form-collection--places .review__field-label {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.review__form-collection--emotions .review__field__input {
+  padding-top: 13px;
+  padding-bottom: 29px;
+  padding-right: 23px;
+  min-height: 118px;
+  min-width: 235px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.review .button {
+  margin-top: 26px;
+  margin-bottom: 62px;
 }
 
