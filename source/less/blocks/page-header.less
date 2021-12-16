@@ -1,3 +1,16 @@
-.logo {
-  min-height: 56px;
+.page-header {
+  display: flex;
+  flex-direction: column;
+  height: 444px;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: @tablet-width) {
+  height: 574px;
 }

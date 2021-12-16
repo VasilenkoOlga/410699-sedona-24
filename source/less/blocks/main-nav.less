@@ -1,19 +1,50 @@
-.main-nav {
-  min-height: 56px;
-}
-
 .main-nav__items {
   list-style: none;
   padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+  }
 }
 
 .main-nav__item {
   background-color: @blue;
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+  &:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
 }
 
 .main-nav__link {
   line-height: 40px;
   text-decoration: none;
-  color: #ffffff;
   display: block;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    color: @black;
+
+    &--active {
+      color: @brown;
+    }
+
+    &:hover {
+      color: @blue;
+    }
+
+    &:active {
+      color: @grey;
+    }
+  }
 }
+
