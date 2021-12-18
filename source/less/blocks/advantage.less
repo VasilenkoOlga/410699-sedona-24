@@ -14,6 +14,10 @@
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantage__sub-title {
@@ -29,8 +33,12 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &:last-of-type {
+    grid-template-columns: 2fr 1fr;
   }
 }
 
@@ -38,7 +46,10 @@
   min-width: 282px;
   padding-top: 39px;
   padding-bottom: 35px;
-  flex-grow: 2;
+}
+
+.advantage__card:last-of-type .advantage__wrapper {
+  order: 2;
 }
 
 .advantage__cause {
@@ -46,6 +57,10 @@
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantage__number {
@@ -64,10 +79,13 @@
 }
 
 .advantage__img {
-  display: flex;
+  display: grid;
   margin-left: auto;
   margin-right: auto;
-  flex-grow: 1;
+}
+
+.advantage__card:last-of-type .advantage__img {
+  order: 1;
 }
 
 .advantage__facilities {
@@ -81,13 +99,13 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 .advantage__facility {
   padding-left: 51px;
-  flex-grow: 1;
 
   &:not(:last-child) {
     margin-bottom: 26px;
@@ -99,6 +117,10 @@
   font-size: 18px;
   line-height: 26px;
   padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantage__facility__text {
@@ -117,7 +139,8 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -126,7 +149,6 @@
   padding-top: 25px;
   padding-bottom: 24px;
   border-bottom: 1px solid #d6d6d6;
-  flex-grow: 1;
 
   &:last-child {
     border-bottom: none;
