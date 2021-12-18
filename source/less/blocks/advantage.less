@@ -8,6 +8,16 @@
   margin-bottom: 27px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 43px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 55px;
+    margin-bottom: 41px;
+  }
 }
 
 .advantage__title {
@@ -17,6 +27,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    margin-bottom: 28px;
   }
 }
 
@@ -46,6 +57,22 @@
   min-width: 282px;
   padding-top: 39px;
   padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    padding-top: 41px;
+    padding-bottom: 42px;
+    padding-right: 32px;
+    padding-left: 32px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 41px;
+    padding-bottom: 42px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 }
 
 .advantage__card:last-of-type .advantage__wrapper {
