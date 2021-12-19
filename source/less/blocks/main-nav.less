@@ -20,16 +20,43 @@
     grid-column-end: 5;
   }
 
+  &:active {
+    background-color: @active-background;
+
+    @media (min-width: @tablet-width) {
+      background-color: @white;
+    }
+  }
+
+  &:hover {
+    background-color: @hover-background;
+
+    @media (min-width: @tablet-width) {
+      background-color: @white;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     background-color: @white;
   }
 }
+
 
 .main-nav__link {
   line-height: 40px;
   text-decoration: none;
   display: block;
   color: @white;
+
+
+  &:hover {
+    color: @white;
+  }
+
+  &:active {
+    color: @white;
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     color: @black;
@@ -43,8 +70,8 @@
     }
 
     &:active {
-      color: @grey;
+      color: @black;
+      opacity: 0.3;
     }
   }
 }
-

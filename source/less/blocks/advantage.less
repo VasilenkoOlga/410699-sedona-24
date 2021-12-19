@@ -128,14 +128,30 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 156px;
+    padding-bottom: 59px;
   }
 }
 
 .advantage__facility {
   padding-left: 51px;
 
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    padding-left: 36px;
+    padding-right: 36px;
+
+    &:nth-child(2) {
+      order: 3;
+    }
+  }
+
   &:not(:last-child) {
     margin-bottom: 26px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -147,6 +163,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    padding-bottom: 22px;
   }
 }
 
@@ -177,6 +194,20 @@
   padding-bottom: 24px;
   border-bottom: 1px solid #d6d6d6;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 41px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 42px;
+    padding-bottom: 62px;
+    padding-left: 42px;
+    padding-right: 43px;
+  }
+
   &:last-child {
     border-bottom: none;
   }
@@ -188,4 +219,8 @@
 
 .advantage__item .advantage__number {
   margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
