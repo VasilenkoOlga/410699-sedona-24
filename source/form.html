@@ -2,17 +2,18 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page-body">
     <header class="page-header">
       <div class="header__container container">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="page-header__logo">
           <img src="img/sedona-logo.svg" width="102" height="84" alt="Логотип «Sedona»" class="logo-image">
         </a>
         <nav class="main-nav">
-          <button class="toggle-button" type="button">
+          <button class="toggle-button visually-hidden" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__items">
@@ -44,7 +45,7 @@
           </div>
           <form action="https://echo.htmlacademy.ru" class="review">
             <h2 class="visually-hidden">Форма обратной связи</h2>
-            <fieldset class="review__form-collection review__form-collection--name">
+            <fieldset class="review__form-collection review__name">
               <legend class="review__form-name">Представьтесь:</legend>
               <div class="review__field review__first-name">
                 <label for="first-name" class="review__field-label">Имя*</label>
@@ -59,7 +60,7 @@
                 <input type="text" class="review__field__input review__field__input--text" id="patronymic" name="patronymic" placeholder="Александрович">
               </div>
             </fieldset>
-            <fieldset class="review__form-collection review__form-collection--contact">
+            <fieldset class="review__form-collection review__contact">
               <legend class="review__form-name"  class="review__field-label">Контактная информация:</legend>
               <div class="review__field review__telephonee">
                 <label for="telephone" class="review__field-label">Контактный телефон*</label>
@@ -70,7 +71,7 @@
                 <input type="email" class="review__field__input" id="email" placeholder="Введите e-mail" name="email" required>
               </div>
             </fieldset>
-            <fieldset class="review__form-collection review__form-collection--impressions">
+            <fieldset class="review__form-collection review__impressions">
               <legend class="review__form-name">Ваше общее впечатление:</legend>
               <div class="review__field review__radio">
                 <label for="positive" class="review__field-label">Скорее положительное</label>
@@ -85,7 +86,7 @@
                 <input type="radio" class="review__field__input review__field__input--radio" id="neutral" name="radio" value="neutral">
               </div>
             </fieldset>
-            <fieldset class="review__form-collection review__form-collection--places">
+            <fieldset class="review__form-collection review__places">
               <legend class="review__form-name">Посещённые достопримечательности:</legend>
               <div class=" review__field review__checkbox">
                 <label for="bridge" class="review__field-label">Мост дьявола</label>
@@ -104,7 +105,7 @@
                 <input type="checkbox" class="review__field__input review__field__input--checkbox" id="rock" name="rock" value="rock">
               </div>
             </fieldset>
-            <fieldset class="review__form-collection review__form-collection--emotions">
+            <fieldset class="review__form-collection review__emotions">
               <legend class="review__form-name">Опишите свои эмоции:</legend>
               <div class=" review__field review__rock">
                 <textarea type="text" class="review__field__input review__field__input--text" id="text" name="text">Опишите подробно все свои восторги</textarea>

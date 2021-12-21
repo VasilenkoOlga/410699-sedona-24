@@ -1,20 +1,65 @@
 .intro {
-  background-image: url("../img/sedona-first-image1.png");
+  background-image: url("../img/sedona-first-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   min-width: 320px;
-  height: 389px;
-}
-
-.intro--inner-page {
-  height: 158px;
-  background-position-x: center;
-  background-position-y: bottom;
 }
 
 .intro__banner {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.intro--main-page {
+  height: 389px;
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+  }
+}
+
+.intro--main-page .intro__banner {
   padding-top: 90px;
   padding-bottom: 85px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+}
+
+.intro--main-page > img {
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
+
+.intro--inner-page {
+  height: 158px;
+  background-position-x: center;
+  background-position-y: bottom;
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+  }
+}
+
+.intro--inner-page .intro__banner {
+  padding-top: 52px;
+  padding-bottom: 67px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 117px;
+  }
+}
+
+.intro--inner-page > img {
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 77px;
+  }
 }
