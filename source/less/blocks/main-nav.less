@@ -2,8 +2,14 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
@@ -82,8 +88,18 @@
   right: 0;
   width: 55px;
   height: 55px;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.main-nav__top-block {
+  position: relative;
+  height: 55px;
+
+  @media (min-width: @tablet-width) {
+    height: 0;
   }
 }
