@@ -16,7 +16,7 @@
           <button class="toggle-button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__items">
+          <ul class="main-nav__items main-nav__items--open"> <!-- main-nav__items--close -->
             <li class="main-nav__item">
               <a href="index.html" class="main-nav__link">Главная</a>
             </li>
@@ -111,7 +111,21 @@
         <div class="video__container container">
           <h2 class="video__title">Все еще сомневаетесь?</h2>
           <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video class="video__show" src="#" poster="img/video.jpg" height="201" width="320" controls></video>
+          <div class="video__player">
+            <video class="video__show" src="#" poster="img/video.jpg" height="201" width="320"></video>
+            <div class="video__controls">
+              <button class="video__button video__button--repeat" type="button">
+                <span class="visually-hidden">Повторное воспроизведение</span>
+              </button>
+              <div class="video__line"></div>
+              <button class="video__button video__button--subtitles" type="button">
+                <span class="visually-hidden">Субтитры</span>
+              </button>
+              <button class="video__button video__button--full-screen" type="button">
+                <span class="visually-hidden">Полноэкранный показ видео</span>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
