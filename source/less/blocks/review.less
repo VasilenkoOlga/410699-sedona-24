@@ -1,11 +1,29 @@
 .review {
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 59px;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 55px;
+  }
 }
 
 .review__form-collection {
   border: none;
   padding-top: 19px;
   padding-bottom: 25px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .review__name .review__field {
@@ -23,6 +41,15 @@
   font-size: 18px;
   line-height: 26px;
   padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    font-size: 21px;
+  }
+}
+
+.review__name .review__form-name {
+  padding-bottom: 55px;
 }
 
 .review__field__input {
@@ -40,6 +67,12 @@
   font-weight: 400;
 }
 
+.review__name {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
 .review__name .review__field__input {
   margin-left: 13px;
 }
@@ -52,14 +85,45 @@
   color: @black;
 }
 
+.review__contact {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.review__contact .review__form-name {
+  padding-bottom: 21px;
+}
+
 .review__contact .review__field {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+    flex-direction: row;
   }
 }
 
@@ -68,20 +132,66 @@
   margin-bottom: 8px;
 }
 
+.review__contact .review__field__input {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 315px;
+  }
+}
+
+.review__impressions {
+  @media (min-width: @tablet-width) {
+    order: -1;
+    width: 50%;
+    padding-bottom: 72px;
+  }
+}
+
 .review__impressions .review__field {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: flex-start;
-  margin-left: 78px;
   margin-top: 21px;
   margin-bottom: 22px;
+}
+
+.review__impressions .review__form-name {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 72px;
+  }
 }
 
 .review__impressions .review__field-label {
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  font-weight: bold;
+}
+
+.review__places {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 54px;
+  }
+}
+
+.review__places .review__form-name {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    padding-bottom: 28px;
+  }
 }
 
 .review__places .review__field {
@@ -89,15 +199,32 @@
   flex-direction: row;
   align-items: baseline;
   justify-content: flex-start;
-  margin-left: 78px;
   margin-top: 27px;
   margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    margin-top: 31px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 25%;
+  }
 }
 
 .review__places .review__field-label {
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+}
+
+.review__emotions {
+  padding-bottom: 58px;
+}
+
+.review__emotions .review__form-name {
+  padding-bottom: 54px;
 }
 
 .review__emotions .review__field__input {
@@ -109,9 +236,43 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 160px;
+  }
+}
+
+.review__form-button {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 61px;
+  }
 }
 
 .review .review__button {
   margin-top: 26px;
   margin-bottom: 62px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.review__button-text {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 500;
+  }
 }

@@ -76,35 +76,35 @@
             <fieldset class="review__form-collection review__impressions">
               <legend class="review__form-name">Ваше общее впечатление:</legend>
               <div class="review__field review__radio">
-                <label for="positive" class="review__field-label">Скорее положительное</label>
                 <input type="radio" class="review__field__input review__field__input--radio" id="positive" name="radio" value="positive" checked>
+                <label for="positive" class="review__field-label">Скорее положительное</label>
               </div>
               <div class="review__field review__radio">
-                <label for="negative"  class="review__field-label">Скорее отрицательное</label>
                 <input type="radio" class="review__field__input review__field__input--radio" id="negative" name="radio" value="negative">
+                <label for="negative"  class="review__field-label">Скорее отрицательное</label>
               </div>
               <div class="review__field review__radio">
-                <label for="neutral" class="review__field-label">Затрудняюсь ответить</label>
                 <input type="radio" class="review__field__input review__field__input--radio" id="neutral" name="radio" value="neutral">
+                <label for="neutral" class="review__field-label">Затрудняюсь ответить</label>
               </div>
             </fieldset>
             <fieldset class="review__form-collection review__places">
               <legend class="review__form-name">Посещённые достопримечательности:</legend>
               <div class=" review__field review__checkbox">
-                <label for="bridge" class="review__field-label">Мост дьявола</label>
                 <input type="checkbox" class="review__field__input review__field__input--checkbox" id="bridge" name="bridge" value="bridge" checked>
+                <label for="bridge" class="review__field-label">Мост дьявола</label>
               </div>
               <div class="review__field review__checkbox">
-                <label for="mountain" class="review__field-label">Гора-Колокол</label>
                 <input type="checkbox" class="review__field__input review__field__input--checkbox" id="mountain" name="mountain" value="mountain" checked>
+                <label for="mountain" class="review__field-label">Гора-Колокол</label>
               </div>
               <div class="review__field review__checkbox">
-                <label for="park" class="review__field-label">Слайд-парк</label>
                 <input type="checkbox" class="review__field__input review__field__input--checkbox" id="park" name="park" value="park" checked>
+                <label for="park" class="review__field-label">Слайд-парк</label>
               </div>
               <div class=" review__field review__checkbox">
-                <label for="rock" class="review__field-label">Красные скалы</label>
                 <input type="checkbox" class="review__field__input review__field__input--checkbox" id="rock" name="rock" value="rock">
+                <label for="rock" class="review__field-label">Красные скалы</label>
               </div>
             </fieldset>
             <fieldset class="review__form-collection review__emotions">
@@ -113,7 +113,10 @@
                 <textarea type="text" class="review__field__input review__field__input--text" id="text" name="text">Опишите подробно все свои восторги</textarea>
               </div>
             </fieldset>
-            <button class="button review__button" type="submit">Отправить отзыв</button>
+            <div class="review__form-button">
+              <button class="button review__button" type="submit">Отправить отзыв</button>
+              <p class="review__button-text">* — обязательные поля</p>
+            </div>
           </form>
         </div>
       </section>
@@ -141,13 +144,13 @@
       </div>
     </footer>
 
-    <section class="modal modal__error">
+    <section class="modal modal__error modal--close">
       <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="button modal__button" type="button">Ок</button>
     </section>
 
-    <section class="modal modal__success">
+    <section class="modal modal__success modal--close">
       <h2 class="modal__title">Ваш отзыв отправлен!</h2>
       <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
       <div class="modal__buttom-wrapper">
