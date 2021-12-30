@@ -1,3 +1,7 @@
+.main-nav {
+  height: 56px;
+}
+
 .main-nav__items {
   list-style: none;
   padding: 0;
@@ -6,6 +10,7 @@
   display: flex;
   flex-direction: column;
   top: 0;
+  min-width: 320px;
   width: 100%;
 
   @media (min-width: @tablet-width) {
@@ -14,6 +19,10 @@
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
   }
+}
+
+.main-nav__items--close {
+  display: none;
 }
 
 .main-nav__item {
@@ -44,6 +53,8 @@
 
   @media (min-width: @tablet-width) {
     background-color: @white;
+    padding-top: 16px;
+    padding-bottom: 14px;
   }
 }
 
@@ -66,6 +77,9 @@
 
   @media (min-width: @tablet-width) {
     color: @black;
+    font-size: 14px;
+    line-height: 26px;
+
 
     &--active {
       color: @brown;

@@ -8,15 +8,15 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="header__container container">
+      <div class="page-header__container container">
         <a href="index.html" class="page-header__logo">
           <img src="img/sedona-logo.svg" width="102" height="84" alt="Логотип «Sedona»" class="logo-image">
         </a>
         <nav class="main-nav">
-          <button class="toggle-button visually-hidden" type="button">
+          <button class="toggle-button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__items">
+          <ul class="main-nav__items main-nav__items--open"> <!-- main-nav__items--close -->
             <li class="main-nav__item">
               <a href="index.html" class="main-nav__link">Главная</a>
             </li>
@@ -43,65 +43,89 @@
             <h1 class="gallery__title">Фото и видео</h1>
             <p class="gallery__sub-title">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
-          <article class="gallery__card">
-            <img src="img/photo-1.jpg" alt="дорога" class="gallery__image" width="280" height="280">
-            <div class="gallery-information">
-              <h2 class="gallery__attraction-title">Неродные просторы</h2>
-              <p class="gallery__attraction-information">Автор фото: Борис</p>
-              <div class="gallery__likes">
-                <button class="likes-button" type="button">
-                  <img src="img/like.svg" alt="Лайк" width="23" height="21">
-                </button>
-                <p class="likes-counter">1350</p>
+          <div class="gallery__cards">
+            <article class="gallery__card">
+              <img src="img/photo-1.jpg" alt="дорога" class="gallery__image" width="280" height="280">
+              <div class="gallery__text-information">
+                <div class="gallery__attraction">
+                  <h2 class="gallery__attraction-title">Неродные просторы</h2>
+                  <p class="gallery__attraction-information">Автор фото: Борис</p>
+                </div>
+                <div class="gallery__likes">
+                  <button class="likes-button" type="button">
+                    <img class="likes-button__img" src="img/like.svg" alt="Лайк" width="23" height="21">
+                  </button>
+                  <p class="likes-button__counter">1350</p>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="gallery__card">
-            <img src="img/photo-2.jpg" alt="цветущий кактус" class="gallery__image" width="280" height="280">
-            <div class="gallery-information">
-              <h2 class="gallery__attraction-title">Местная растительность</h2>
-              <p class="gallery__attraction-information">Автор фото: Сергейс</p>
-              <div class="gallery__likes">
-                <button class="likes-button" type="button">
-                  <img src="img/like.svg" alt="Лайк" width="23" height="21">
-                </button>
-                <p class="likes-counter">143</p>
+            </article>
+            <article class="gallery__card">
+              <img src="img/photo-2.jpg" alt="цветущий кактус" class="gallery__image" width="280" height="280">
+              <div class="gallery__text-information">
+                <div class="gallery__attraction">
+                  <h2 class="gallery__attraction-title">Местная растительность</h2>
+                  <p class="gallery__attraction-information">Автор фото: Сергейс</p>
+                </div>
+                <div class="gallery__likes">
+                  <button class="likes-button" type="button">
+                    <img class="likes-button__img" src="img/like.svg" alt="Лайк" width="23" height="21">
+                  </button>
+                  <p class="likes-button__counter">143</p>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="gallery__card">
-            <img src="img/photo-3.jpg" alt="крутая дорога" class="gallery__image" width="280" height="280">
-            <div class="gallery-information">
-              <h2 class="gallery__attraction-title">Дорога на север</h2>
-              <p class="gallery__attraction-information">Автор фото: Петр</p>
-              <div class="gallery__likes">
-                <button class="likes-button" type="button">
-                  <img src="img/like.svg" alt="Лайк" width="23" height="21">
-                </button>
-                <p class="likes-counter">96</p>
+            </article>
+            <article class="gallery__card">
+              <img src="img/photo-3.jpg" alt="крутая дорога" class="gallery__image" width="280" height="280">
+              <div class="gallery__text-information">
+                <div class="gallery__attraction">
+                  <h2 class="gallery__attraction-title">Дорога на север</h2>
+                  <p class="gallery__attraction-information">Автор фото: Петр</p>
+                </div>
+                <div class="gallery__likes">
+                  <button class="likes-button" type="button">
+                    <img class="likes-button__img" src="img/like.svg" alt="Лайк" width="23" height="21">
+                  </button>
+                  <p class="likes-button__counter">96</p>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="gallery__card">
-            <img src="img/photo-4.jpg" alt="мост дьявола" class="gallery__image" width="280" height="280">
-            <div class="gallery-information">
-              <h2 class="gallery__attraction-title">Мост дьявола</h2>
-              <p class="gallery__attraction-information">Автор фото: Антон</p>
-              <div class="gallery__likes">
-                <button class="likes-button" type="button">
-                  <img src="img/like.svg" alt="Лайк" width="23" height="21">
-                </button>
-                <p class="likes-counter">254</p>
+            </article>
+            <article class="gallery__card">
+              <img src="img/photo-4.jpg" alt="мост дьявола" class="gallery__image" width="280" height="280">
+              <div class="gallery__text-information">
+                <div class="gallery__attraction">
+                  <h2 class="gallery__attraction-title">Мост дьявола</h2>
+                  <p class="gallery__attraction-information">Автор фото: Антон</p>
               </div>
-            </div>
-          </article>
+                <div class="gallery__likes">
+                  <button class="likes-button" type="button">
+                    <img class="likes-button__img" src="img/like.svg" alt="Лайк" width="23" height="21">
+                  </button>
+                  <p class="likes-button__counter">254</p>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
       <section class="video">
-        <div class="gallery__container container">
+        <div class="video__container container">
           <h2 class="video__title">Все еще сомневаетесь?</h2>
           <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video class="video_show" src="#" poster="img/video.jpg" height="201" width="320" controls></video>
+          <div class="video__player">
+            <video class="video__show" src="#" poster="img/video.jpg" height="201" width="320"></video>
+            <div class="video__controls">
+              <button class="video__button video__button--repeat" type="button">
+                <span class="visually-hidden">Повторное воспроизведение</span>
+              </button>
+              <div class="video__line"></div>
+              <button class="video__button video__button--subtitles" type="button">
+                <span class="visually-hidden">Субтитры</span>
+              </button>
+              <button class="video__button video__button--full-screen" type="button">
+                <span class="visually-hidden">Полноэкранный показ видео</span>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
