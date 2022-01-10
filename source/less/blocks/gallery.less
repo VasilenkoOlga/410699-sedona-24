@@ -20,6 +20,11 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .gallery__title {
@@ -180,5 +185,15 @@
     margin-right: 9px;
     width: 23px;
     height: 21px;
+  }
+}
+
+.likes-button__svg {
+  fill: @black;
+  opacity: 0.3;
+
+  @media (min-width: @desktop-width) {
+    fill: @white;
+    opacity: 1;
   }
 }
