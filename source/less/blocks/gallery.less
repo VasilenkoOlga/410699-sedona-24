@@ -20,6 +20,11 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .gallery__title {
@@ -40,7 +45,7 @@
 }
 
 .gallery__information {
-  padding-bottom: 64px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 82px;
@@ -63,9 +68,9 @@
 }
 
 .gallery__card {
+  position: relative;
   padding-top: 22px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
@@ -78,7 +83,6 @@
 }
 
 .gallery__card:first-of-type {
-  border-top: 1px solid #e5e5e5;
   grid-column: 1 / -1;
 
   @media (min-width: @tablet-width) {
@@ -88,6 +92,40 @@
 
   @media (min-width: @desktop-width) {
     height: 400px;
+  }
+}
+
+.gallery__card::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  min-width: 320px;
+  width: 100%;
+  background-color: #e5e5e5;
+  left: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.gallery__card:first-of-type::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  min-width: 320px;
+  width: 100%;
+  background-color: #e5e5e5;
+  left: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -180,5 +218,15 @@
     margin-right: 9px;
     width: 23px;
     height: 21px;
+  }
+}
+
+.likes-button__svg {
+  fill: @black;
+  opacity: 0.3;
+
+  @media (min-width: @desktop-width) {
+    fill: @white;
+    opacity: 1;
   }
 }
