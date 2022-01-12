@@ -1,9 +1,25 @@
 .intro {
-  background-image: url("../img/big-triangle.svg"), url("../img/sedona-first-image.jpg");
+//  background-image: url("../img/big-triangle.svg"), url("../img/sedona-first-image.jpg");
+  background-image: url("../img/sedona-first-image.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: bottom, center;
   min-width: 320px;
+  position: relative;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  height: 292px;
+  width: 100%;
+  max-width: 1200px;
+  background-image: url("../img/big-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+  bottom: 0;
+  right: 0;
+
 }
 
 .intro__banner {
