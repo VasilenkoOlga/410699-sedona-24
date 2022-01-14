@@ -5,6 +5,10 @@
   min-width: 320px;
   position: relative;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/sedona-first-image@2x.jpg");
+  }
 }
 
 .intro::after {
@@ -53,11 +57,20 @@
 
 .intro--inner-page {
   height: 158px;
-  background-position-x: center;
-  background-position-y: bottom;
+  background-image: url("../img/sedona-first-image-inner.jpg");
+  background-size: 900px auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/sedona-first-image-inner@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     height: 290px;
+    background-size: 1202px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position-y: 85%;
   }
 }
 
