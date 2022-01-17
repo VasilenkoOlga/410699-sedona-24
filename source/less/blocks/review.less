@@ -354,6 +354,10 @@
   left: 21px;
 }
 
+.review__field__input--radio:checked + .review__field-label:active::after {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
 .review__places {
   display: flex;
   flex-direction: column;
@@ -449,6 +453,10 @@
   background-image: url("../img/checkmark.svg");
   top: 8px;
   left: 17px;
+}
+
+.review__field__input--checkbox:checked + .review__field-label:active::after {
+  background-image: url("../img/checkmark-active.svg");
 }
 
 .review__emotions {
