@@ -13,16 +13,16 @@
   padding-bottom: 14px;
   border: none;
   text-transform: uppercase;
-
-  &:active {
-    color: @white;
-    opacity: 0.3;
-    background-color: @active-background;
-  }
+  cursor: pointer;
 
   &:hover {
     background-color: @hover-background;
     color: @white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
   }
 
   &:disabled {
