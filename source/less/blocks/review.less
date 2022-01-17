@@ -75,6 +75,17 @@
   padding-left: 22px;
   border: none;
   height: 58px;
+
+  &:hover {
+    background-color: @grey;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 4px @grey;
+    background-color: @white;
+  }
 }
 
 .review__field-label {
@@ -338,9 +349,13 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: @black;
+  background-color: #333333;
   top: 6px;
   left: 21px;
+}
+
+.review__field__input--radio:checked + .review__field-label:active::after {
+  background-color: rgba(51, 51, 51, 0.3);
 }
 
 .review__places {
@@ -418,6 +433,18 @@
   left: 0;
 }
 
+.review__field__input--checkbox:hover + .review__field-label::before,
+.review__field__input--radio:hover + .review__field-label::before,
+.review__field__input--checkbox:focus + .review__field-label::before,
+.review__field__input--radio:focus + .review__field-label::before {
+  background-color: @grey;
+}
+
+.review__field__input--checkbox:active + .review__field-label::before,
+.review__field__input--radio:active + .review__field-label::before {
+  background-color: #d5d5d5;
+}
+
 .review__field__input--checkbox:checked + .review__field-label::after {
   content: "";
   position: absolute;
@@ -426,6 +453,10 @@
   background-image: url("../img/checkmark.svg");
   top: 8px;
   left: 17px;
+}
+
+.review__field__input--checkbox:checked + .review__field-label:active::after {
+  background-image: url("../img/checkmark-active.svg");
 }
 
 .review__emotions {
