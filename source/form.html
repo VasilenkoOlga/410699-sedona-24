@@ -16,7 +16,7 @@
         <div class="page-header__container container">
           <a href="index.html" class="page-header__logo">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/sedona-big-logo.svg" width="187" height="97">
+              <source media="(min-width: 1200px)" srcset="img/sedona-big-logo.svg">
               <img src="img/sedona-logo.svg" width="102" height="84" alt="Логотип «Sedona»" class="logo-image">
             </picture>
           </a>
@@ -73,7 +73,7 @@
               </fieldset>
               <hr class="line">
               <fieldset class="review__form-collection review__contact">
-                <legend class="review__form-name"  class="review__field-label">Контактная информация:</legend>
+                <legend class="review__form-name review__field-label">Контактная информация:</legend>
                 <div class="review__field review__telephone">
                   <label for="telephone" class="review__field-label"><span class="review__hidden">Контактный</span> телефон*</label>
                   <input type="tel" class="review__field__input review__field__input--text" id="telephone" placeholder="Введите телефон" name="telephone" required>
@@ -123,7 +123,7 @@
               <fieldset class="review__form-collection review__emotions">
                 <legend class="review__form-name">Опишите свои эмоции:</legend>
                 <div class=" review__field review__rock">
-                  <textarea type="text" class="review__field__input review__field__input--text" id="text" name="text">Опишите подробно все свои восторги</textarea>
+                  <textarea class="review__field__input review__field__input--text" id="text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
                 </div>
               </fieldset>
               <div class="review__form-button">
@@ -173,6 +173,7 @@
           </div>
         </div>
       </footer>
+    </div>
     <section class="modal modal__error modal--close">
       <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
