@@ -1,10 +1,9 @@
 .gallery {
-  padding-top: 24px;
-  padding-bottom: 40px;
+  padding-top: 33px;
+  padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
-    padding-top: 58px;
-    padding-bottom: 0;
+    padding-top: 63px;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,6 +34,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
+    margin-bottom: 34px;
   }
 }
 
@@ -45,14 +45,16 @@
 }
 
 .gallery__information {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 82px;
+    padding-bottom: 78px;
+    width: 435px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 84px;
+    padding-bottom: 77px;
   }
 }
 
@@ -60,10 +62,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
   }
 }
 
@@ -116,7 +121,7 @@
 
 .gallery__text-information {
   @media (min-width: @tablet-width) {
-    padding-top: 18px;
+    padding-top: 15px;
     padding-bottom: 15px;
     background-color: #f2f2f2;
     padding-left: 20px;
@@ -154,7 +159,7 @@
   font-weight: 400;
   text-transform: none;
   text-align: left;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -168,8 +173,16 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 64px;
   }
+}
+
+.gallery__likes__counter {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .likes-button {

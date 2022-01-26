@@ -1,9 +1,15 @@
 .modal {
-  border: 1px solid @black;
   position: fixed;
   background-color: @white;
   top: 50%;
-  left: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  @media (min-width: @tablet-width) {
+    top: 119px;
+  }
 }
 
 .modal__title {
@@ -20,10 +26,14 @@
   }
 }
 
-.modal__success .modal__title {
+.modal--success .modal__title {
   @media (min-width: @tablet-width) {
     line-height: 26px;
-    margin-bottom: 22px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -35,19 +45,22 @@
   padding-right: 42px;
 }
 
-.modal__error .modal__text {
+.modal--error .modal__text {
   margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    margin-bottom: 54px;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 38px;
   }
 }
 
-.modal__error {
+.modal--error {
   padding-top: 40px;
   padding-bottom: 35px;
-  margin-left: -160px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -56,23 +69,20 @@
     padding-top: 36px;
     padding-bottom: 49px;
     width: 280px;
-    margin-left: -140px;
   }
 }
 
-.modal__success {
+.modal--success {
   padding-top: 30px;
-  margin-left: -160px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 44px;
     width: 640px;
-    margin-left: -320px;
   }
 }
 
-.modal__success .modal__text {
+.modal--success .modal__text {
   margin-bottom: 48px;
 
   @media (min-width: @tablet-width) {
@@ -80,9 +90,13 @@
     padding-right: 100px;
     margin-bottom: 52px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 43px;
+  }
 }
 
-.modal__success .modal__buttom-wrapper {
+.modal--success .modal__buttom-wrapper {
   padding: 20px;
   background-color: #f2f2f2;
 
@@ -94,13 +108,20 @@
   }
 }
 
-.modal__error .modal__button {
-  min-width: 180px;
+.modal--error .modal__button {
+  width: 180px;
+
+  @media (min-width: @tablet-width) {
+    width: 272px;
+  }
 }
 
-.modal__success .modal__button {
+.modal--success .modal__button {
+  font-size: 18px;
+
   @media (min-width: @tablet-width) {
     width: 100%;
+    font-size: 21px;
   }
 }
 
