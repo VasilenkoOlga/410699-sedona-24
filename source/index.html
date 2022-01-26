@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link href="./css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
@@ -16,14 +18,12 @@
         <div class="page-header__container container">
           <a href="#" class="page-header__logo">
             <picture>
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/sedona-big-logo.svg">
-                <source media="(min-width: 768px)" srcset="img/sedona-tablet-logo.svg">
-                <img src="img/sedona-logo.svg" width="102" height="84" alt="Логотип «Sedona»" class="logo-image">
-              </picture>
+              <source media="(min-width: 1200px)" srcset="img/sedona-big-logo.svg">
+              <source media="(min-width: 768px)" srcset="img/sedona-tablet-logo.svg">
+              <img src="img/sedona-logo.svg" width="102" height="84" alt="Логотип «Sedona»" class="logo-image">
             </picture>
           </a>
-          <nav class="main-nav main-nav--close main-nav--nojs"> <!-- main-nav--close -->
+          <nav class="main-nav main-nav--open main-nav--nojs"> <!-- main-nav--close -->
             <div class="main-nav__top-block">
               <button class="toggle-button" type="button">
                 <span class="visually-hidden">Открыть меню</span>
@@ -51,7 +51,7 @@
       </header>
       <main class="page-main">
         <section class="advantage">
-          <div class="advantages__container container">
+          <div class="advantage__container container">
             <div class="advantage__information">
               <h1 class="advantage__title">СЕДОНА — небольшой городок&nbsp;в АРИЗОНЕ, заслуживающий&nbsp;большего!</h1>
               <p class="advantage__sub-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -72,20 +72,20 @@
             <ul class="advantage__facilities">
               <li class="advantage__facility">
                 <div class="advantage__lodging">
-                  <h3 class="advantage__facility__title lodging__title">Жилье</h3>
-                  <p class="advantage__facility__text lodging__text">Рекомендуем пожить в настоящем мотеле,&nbsp;все как&nbsp;в кино!</p>
+                  <h3 class="advantage__facility__title">Жилье</h3>
+                  <p class="advantage__facility__text">Рекомендуем пожить в настоящем мотеле,&nbsp;все как&nbsp;в кино!</p>
                 </div>
               </li>
               <li class="advantage__facility">
                 <div class="advantage__souvenirs">
-                  <h3 class="advantage__facility__title souvenirs__title">Сувениры</h3>
-                  <p class="advantage__facility__text souvenirs__text">Не только китайского, <span class="advantage__nowrap advantage__nowrap--desktop">но и местного&nbsp;производства!</span></p>
+                  <h3 class="advantage__facility__title">Сувениры</h3>
+                  <p class="advantage__facility__text">Не только китайского, <span class="advantage__nowrap advantage__nowrap--desktop">но и местного&nbsp;производства!</span></p>
                 </div>
               </li>
               <li class="advantage__facility">
                 <div class="advantage__food">
-                  <h3 class="advantage__facility__title food__title">Еда</h3>
-                  <p class="advantage__facility__text food__text">Всегда заказывайте фирменный  бургер, Вы&nbsp;не разочаруетесь!</p>
+                  <h3 class="advantage__facility__title">Еда</h3>
+                  <p class="advantage__facility__text">Всегда заказывайте фирменный  бургер, Вы&nbsp;не разочаруетесь!</p>
                 </div>
               </li>
             </ul>
