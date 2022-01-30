@@ -16,19 +16,7 @@
     <div class="global-wrapper">
       <header class="page-header">
         <div class="page-header__container container">
-          <a href="index.html" class="page-header__logo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/sedona-big-logo.svg">
-              <source media="(min-width: 768px)" srcset="img/sedona-tablet-logo.svg">
-              <img src="img/sedona-logo.svg" width="102" height="84" alt="Логотип «Sedona»" class="logo-image">
-            </picture>
-          </a>
           <nav class="main-nav main-nav--open main-nav--nojs"> <!-- main-nav--close -->
-            <div class="main-nav__top-block">
-              <button class="toggle-button" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-              </button>
-            </div>
             <ul class="main-nav__items">
               <li class="main-nav__item">
                 <a href="index.html" class="main-nav__link">Главная</a>
@@ -43,6 +31,20 @@
                 <a href="htmlacademy.ru" class="main-nav__link">Html Academy</a>
               </li>
             </ul>
+            <div class="page-header__logo-wrapper">
+              <a href="#" class="page-header__logo">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/sedona-big-logo.svg">
+                  <source media="(min-width: 768px)" srcset="img/sedona-tablet-logo.svg">
+                  <img src="img/sedona-logo.svg" width="102" height="84" alt="Логотип «Sedona»" class="logo-image">
+                </picture>
+              </a>
+            </div>
+            <div class="main-nav__top-block">
+              <button class="toggle-button" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
           </nav>
           <div class="intro intro--inner-page">
             <img src="img/sedona-inner-page.svg" alt="Sedona" class="intro__banner">
@@ -59,15 +61,17 @@
             <div class="gallery__cards">
               <hr class="line">
               <article class="gallery__card gallery__container">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                  <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile.jpg 1x, img/photo-1-mobile@2x.jpg 2x" alt="Дорога" class="gallery__image" width="280" height="280">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                    <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile.jpg 1x, img/photo-1-mobile@2x.jpg 2x" alt="Дорога" class="gallery__image" width="280" height="280">
+                  </picture>
+                </a>
                 <div class="gallery__text-information">
                   <div class="gallery__attraction">
                     <h2 class="gallery__attraction-title">Неродные просторы</h2>
@@ -75,6 +79,7 @@
                   </div>
                   <div class="gallery__likes">
                     <button class="likes-button" type="button">
+                      <span class="visually-hidden">Лайк</span>
                       <svg class="likes-button__svg" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="../img/sprite.svg#like"></use>
                       </svg>
@@ -85,22 +90,25 @@
               </article>
               <hr class="line">
               <article class="gallery__card gallery__container">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                  <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile.jpg 1x, img/photo-2-mobile@2x.jpg 2x" alt="Цветущий кактус" class="gallery__image" width="280" height="280">
-                </picture>
-                  <div class="gallery__text-information">
+                    <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                    <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile.jpg 1x, img/photo-2-mobile@2x.jpg 2x" alt="Цветущий кактус" class="gallery__image" width="280" height="280">
+                  </picture>
+                </a>
+                <div class="gallery__text-information">
                   <div class="gallery__attraction">
                     <h2 class="gallery__attraction-title">Местная растительность</h2>
                     <p class="gallery__attraction-information">Автор фото: Сергейс</p>
                   </div>
                   <div class="gallery__likes">
                     <button class="likes-button" type="button">
+                      <span class="visually-hidden">Лайк</span>
                       <svg class="likes-button__svg" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="../img/sprite.svg#like"></use>
                       </svg>
@@ -111,15 +119,17 @@
               </article>
               <hr class="line">
               <article class="gallery__card gallery__container">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                  <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile.jpg 1x, img/photo-3-mobile@2x.jpg 2x" alt="Крутая дорога" class="gallery__image" width="280" height="280">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                    <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile.jpg 1x, img/photo-3-mobile@2x.jpg 2x" alt="Крутая дорога" class="gallery__image" width="280" height="280">
+                  </picture>
+                </a>
                 <div class="gallery__text-information">
                   <div class="gallery__attraction">
                     <h2 class="gallery__attraction-title">Дорога на север</h2>
@@ -127,6 +137,7 @@
                   </div>
                   <div class="gallery__likes">
                     <button class="likes-button" type="button">
+                      <span class="visually-hidden">Лайк</span>
                       <svg class="likes-button__svg" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="../img/sprite.svg#like"></use>
                       </svg>
@@ -137,15 +148,17 @@
               </article>
               <hr class="line">
               <article class="gallery__card gallery__container">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-                  <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile.jpg 1x, img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола" class="gallery__image" width="280" height="280">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                    <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile.jpg 1x, img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола" class="gallery__image" width="280" height="280">
+                  </picture>
+                </a>
                 <div class="gallery__text-information">
                   <div class="gallery__attraction">
                     <h2 class="gallery__attraction-title">Мост дьявола</h2>
@@ -153,6 +166,7 @@
                 </div>
                   <div class="gallery__likes">
                     <button class="likes-button" type="button">
+                      <span class="visually-hidden">Лайк</span>
                       <svg class="likes-button__svg" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="../img/sprite.svg#like"></use>
                       </svg>
